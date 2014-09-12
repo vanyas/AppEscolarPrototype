@@ -12,7 +12,9 @@
 		B206DDD619BE1D9B001CECBC /* AppEscolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDD519BE1D9B001CECBC /* AppEscolarTests.swift */; };
 		B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDEB19BE23C9001CECBC /* AppDelegate.swift */; };
 		B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */; };
+		B26CA53D19C3A48800050693 /* EventoEscolarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */; };
 		B2DB765D19C21E1C00071E2D /* slideInOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */; };
+		B2DCEA9D19C345180028992F /* MenuTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DCEA9C19C345180028992F /* MenuTableHeaderView.swift */; };
 		B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D1D19C0AE9700139AF3 /* MenuTableCell.swift */; };
 		B2F22D2319C1079600139AF3 /* EventosEscolaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D2219C1079600139AF3 /* EventosEscolaresViewController.swift */; };
 		B2F22D2519C10A5900139AF3 /* CalendarioEscolarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D2419C10A5900139AF3 /* CalendarioEscolarViewController.swift */; };
@@ -39,7 +41,9 @@
 		B206DDEB19BE23C9001CECBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B206DDFB19BE3054001CECBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarMenuController.swift; sourceTree = "<group>"; };
+		B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoEscolarCell.swift; sourceTree = "<group>"; };
 		B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slideInOutAnimationController.swift; sourceTree = "<group>"; };
+		B2DCEA9C19C345180028992F /* MenuTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableHeaderView.swift; sourceTree = "<group>"; };
 		B2F22D1D19C0AE9700139AF3 /* MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
 		B2F22D2219C1079600139AF3 /* EventosEscolaresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosEscolaresViewController.swift; sourceTree = "<group>"; };
 		B2F22D2419C10A5900139AF3 /* CalendarioEscolarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarioEscolarViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 		B206DDE119BE2248001CECBC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B2DCEA9B19C344670028992F /* tableViewHeaders */,
 				B2F22D1B19C0ADC000139AF3 /* tableViewCells */,
 			);
 			path = Components;
@@ -154,6 +159,7 @@
 		B206DDE219BE2248001CECBC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B26CA53A19C3A3C200050693 /* Calendario Escolar */,
 				B2F22D1F19C0D2BD00139AF3 /* Eventos Escolares */,
 				B206DDF219BE2CDE001CECBC /* customNavigator */,
 			);
@@ -212,6 +218,22 @@
 			name = customNavigator;
 			sourceTree = "<group>";
 		};
+		B26CA53A19C3A3C200050693 /* Calendario Escolar */ = {
+			isa = PBXGroup;
+			children = (
+				B2F22D2419C10A5900139AF3 /* CalendarioEscolarViewController.swift */,
+			);
+			name = "Calendario Escolar";
+			sourceTree = "<group>";
+		};
+		B26CA53B19C3A45D00050693 /* Eventos Escolares */ = {
+			isa = PBXGroup;
+			children = (
+				B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */,
+			);
+			name = "Eventos Escolares";
+			sourceTree = "<group>";
+		};
 		B2DB765B19C21DF100071E2D /* slideOutAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,9 +242,18 @@
 			name = slideOutAnimation;
 			sourceTree = "<group>";
 		};
+		B2DCEA9B19C344670028992F /* tableViewHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				B2DCEA9C19C345180028992F /* MenuTableHeaderView.swift */,
+			);
+			name = tableViewHeaders;
+			sourceTree = "<group>";
+		};
 		B2F22D1B19C0ADC000139AF3 /* tableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				B26CA53B19C3A45D00050693 /* Eventos Escolares */,
 				B2F22D1C19C0ADC800139AF3 /* Menu */,
 			);
 			name = tableViewCells;
@@ -240,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				B2F22D2219C1079600139AF3 /* EventosEscolaresViewController.swift */,
-				B2F22D2419C10A5900139AF3 /* CalendarioEscolarViewController.swift */,
 			);
 			name = "Eventos Escolares";
 			sourceTree = "<group>";
@@ -349,6 +379,8 @@
 				B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */,
 				B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */,
 				B2F22D2519C10A5900139AF3 /* CalendarioEscolarViewController.swift in Sources */,
+				B26CA53D19C3A48800050693 /* EventoEscolarCell.swift in Sources */,
+				B2DCEA9D19C345180028992F /* MenuTableHeaderView.swift in Sources */,
 				B2F22D2319C1079600139AF3 /* EventosEscolaresViewController.swift in Sources */,
 				B2DB765D19C21E1C00071E2D /* slideInOutAnimationController.swift in Sources */,
 			);

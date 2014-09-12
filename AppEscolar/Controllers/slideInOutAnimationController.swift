@@ -16,7 +16,7 @@ class slideInOutAnimationController: NSObject {
     private var completionBlk:((Void)->(Void))?
     private weak var viewToSlideIn:UIView?
     
-    var duration = 0.20
+    var duration = 0.4
     
     //MARK: -
     //MARK: Util
@@ -39,8 +39,8 @@ class slideInOutAnimationController: NSObject {
         self.viewToSlideIn = slideInView
         
         //execute slide out animation which will call the slide in animation on delegate
-        self.slideOutAnimationsForView(slideOutView)
-
+        //self.slideOutAnimationsForView(slideOutView)
+        self.slideInAnimationsForView(slideInView)
     }
     
     
@@ -127,11 +127,12 @@ class slideInOutAnimationController: NSObject {
         
         
         var positionInAnimation = CABasicAnimation(keyPath:"position")
-        positionInAnimation.duration = duration*1.75
+        positionInAnimation.duration = duration
         positionInAnimation.fromValue = NSValue(CGPoint: slideInStartPosition)
         positionInAnimation.toValue =  NSValue(CGPoint: slideInFinalPosition)
         positionInAnimation.setValue("slideInAnimation", forKey: "animationName")
         positionInAnimation.delegate = self
+        positionInAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
         slideInView.layer.addAnimation(positionInAnimation, forKey: "slideIn")
     }
 }

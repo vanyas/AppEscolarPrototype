@@ -61,9 +61,8 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
     
     override func viewDidLoad() {
         //customize tableview
-        self.menuTableView.estimatedRowHeight = 84.0
         self.menuTableView.rowHeight = 64.0
-        
+        self.menuTableView.registerClass(MenuTableHeaderView.self, forHeaderFooterViewReuseIdentifier: MenuTableHeaderView.identifierID())
         
         
         //add navigationController
@@ -114,12 +113,13 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        var titleLabel = UILabel()
+
+        var headerView =
+        tableView.dequeueReusableHeaderFooterViewWithIdentifier(MenuTableHeaderView.identifierID()) as MenuTableHeaderView
         
-        titleLabel.textColor = UIColor(white: 1.0, alpha: 0.6)
-        titleLabel.text = "  " + "Mi escuela"
+        headerView.setTranslatesAutoresizingMaskIntoConstraints(false)
         
-        return titleLabel
+        return headerView
     }
     
     
@@ -180,14 +180,14 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
             snapShotView.transform = ZoomTransitionType.ZoomOut(self.view.bounds.size).transFormForZoom()
             self.view.insertSubview(snapShotView, belowSubview: self.menuTableView) //below menu
             
-            println(self.view.subviews.count)
             //slide animation
             var animationController = slideInOutAnimationController()
             animationController.slideOutandIdAnimationForViews(slideOutView: snapShotView,
                 slideInView: masterNavigationController.view) { () -> () in
                     snapShotView.removeFromSuperview()
                     self.zoomInPresentedController(animated: true)
-                    println(self.view.subviews.count)
+                    
+                    
             }
             
         }//end else
