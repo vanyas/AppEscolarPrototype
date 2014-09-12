@@ -11,13 +11,12 @@
 		B206DDCA19BE1D9B001CECBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B206DDC919BE1D9B001CECBC /* Images.xcassets */; };
 		B206DDD619BE1D9B001CECBC /* AppEscolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDD519BE1D9B001CECBC /* AppEscolarTests.swift */; };
 		B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDEB19BE23C9001CECBC /* AppDelegate.swift */; };
-		B206DDF619BE2D6A001CECBC /* CustomSlidingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDF519BE2D6A001CECBC /* CustomSlidingController.swift */; };
 		B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */; };
-		B206DE0119BE5F49001CECBC /* SlideTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DE0019BE5F49001CECBC /* SlideTransitionDelegate.swift */; };
-		B206DE0319BE6047001CECBC /* SlidePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DE0219BE6047001CECBC /* SlidePresentationController.swift */; };
-		B206DE0519BE6080001CECBC /* SlideViewControllerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DE0419BE6080001CECBC /* SlideViewControllerAnimator.swift */; };
+		B2DB765D19C21E1C00071E2D /* slideInOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */; };
 		B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D1D19C0AE9700139AF3 /* MenuTableCell.swift */; };
-		B2F22D2119C0D48900139AF3 /* ScholarEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D2019C0D48900139AF3 /* ScholarEventsViewController.swift */; };
+		B2F22D2319C1079600139AF3 /* EventosEscolaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D2219C1079600139AF3 /* EventosEscolaresViewController.swift */; };
+		B2F22D2519C10A5900139AF3 /* CalendarioEscolarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D2419C10A5900139AF3 /* CalendarioEscolarViewController.swift */; };
+		B2F22D2719C10C1700139AF3 /* MasterNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D2619C10C1700139AF3 /* MasterNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,14 +37,13 @@
 		B206DDD519BE1D9B001CECBC /* AppEscolarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEscolarTests.swift; sourceTree = "<group>"; };
 		B206DDE919BE22FA001CECBC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Application/Info.plist; sourceTree = "<group>"; };
 		B206DDEB19BE23C9001CECBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B206DDF519BE2D6A001CECBC /* CustomSlidingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSlidingController.swift; sourceTree = "<group>"; };
 		B206DDFB19BE3054001CECBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarMenuController.swift; sourceTree = "<group>"; };
-		B206DE0019BE5F49001CECBC /* SlideTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideTransitionDelegate.swift; sourceTree = "<group>"; };
-		B206DE0219BE6047001CECBC /* SlidePresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidePresentationController.swift; sourceTree = "<group>"; };
-		B206DE0419BE6080001CECBC /* SlideViewControllerAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewControllerAnimator.swift; sourceTree = "<group>"; };
+		B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slideInOutAnimationController.swift; sourceTree = "<group>"; };
 		B2F22D1D19C0AE9700139AF3 /* MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
-		B2F22D2019C0D48900139AF3 /* ScholarEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScholarEventsViewController.swift; sourceTree = "<group>"; };
+		B2F22D2219C1079600139AF3 /* EventosEscolaresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosEscolaresViewController.swift; sourceTree = "<group>"; };
+		B2F22D2419C10A5900139AF3 /* CalendarioEscolarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarioEscolarViewController.swift; sourceTree = "<group>"; };
+		B2F22D2619C10C1700139AF3 /* MasterNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,21 +205,19 @@
 		B206DDF219BE2CDE001CECBC /* customNavigator */ = {
 			isa = PBXGroup;
 			children = (
-				B206DDFF19BE5F05001CECBC /* Custom Presentation */,
-				B206DDF519BE2D6A001CECBC /* CustomSlidingController.swift */,
+				B2DB765B19C21DF100071E2D /* slideOutAnimation */,
+				B2F22D2619C10C1700139AF3 /* MasterNavigationController.swift */,
 				B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */,
 			);
 			name = customNavigator;
 			sourceTree = "<group>";
 		};
-		B206DDFF19BE5F05001CECBC /* Custom Presentation */ = {
+		B2DB765B19C21DF100071E2D /* slideOutAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				B206DE0019BE5F49001CECBC /* SlideTransitionDelegate.swift */,
-				B206DE0219BE6047001CECBC /* SlidePresentationController.swift */,
-				B206DE0419BE6080001CECBC /* SlideViewControllerAnimator.swift */,
+				B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */,
 			);
-			name = "Custom Presentation";
+			name = slideOutAnimation;
 			sourceTree = "<group>";
 		};
 		B2F22D1B19C0ADC000139AF3 /* tableViewCells */ = {
@@ -243,7 +239,8 @@
 		B2F22D1F19C0D2BD00139AF3 /* Eventos Escolares */ = {
 			isa = PBXGroup;
 			children = (
-				B2F22D2019C0D48900139AF3 /* ScholarEventsViewController.swift */,
+				B2F22D2219C1079600139AF3 /* EventosEscolaresViewController.swift */,
+				B2F22D2419C10A5900139AF3 /* CalendarioEscolarViewController.swift */,
 			);
 			name = "Eventos Escolares";
 			sourceTree = "<group>";
@@ -347,14 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F22D2719C10C1700139AF3 /* MasterNavigationController.swift in Sources */,
 				B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */,
 				B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */,
-				B206DE0519BE6080001CECBC /* SlideViewControllerAnimator.swift in Sources */,
 				B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */,
-				B2F22D2119C0D48900139AF3 /* ScholarEventsViewController.swift in Sources */,
-				B206DDF619BE2D6A001CECBC /* CustomSlidingController.swift in Sources */,
-				B206DE0319BE6047001CECBC /* SlidePresentationController.swift in Sources */,
-				B206DE0119BE5F49001CECBC /* SlideTransitionDelegate.swift in Sources */,
+				B2F22D2519C10A5900139AF3 /* CalendarioEscolarViewController.swift in Sources */,
+				B2F22D2319C1079600139AF3 /* EventosEscolaresViewController.swift in Sources */,
+				B2DB765D19C21E1C00071E2D /* slideInOutAnimationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

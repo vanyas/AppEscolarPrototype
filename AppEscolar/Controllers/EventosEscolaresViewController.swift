@@ -1,5 +1,5 @@
 //
-//  ScholarEventsViewController.swift
+//  EventosEscolaresViewController.swift
 //  AppEscolar
 //
 //  Created by VANGELI ONTIVEROS on 10/09/14.
@@ -8,12 +8,21 @@
 
 import UIKit
 
-class ScholarEventsViewController: UIViewController {
+class EventosEscolaresViewController: UIViewController {
 
+    var masterNavigationController:MasterNavigationController{
+        get{
+            
+            return self.navigationController as MasterNavigationController
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.leftBarButtonItem = masterNavigationController.showMenuButton
+        
     }
 
     override func didReceiveMemoryWarning() {
