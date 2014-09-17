@@ -15,6 +15,14 @@
 		B206DDD619BE1D9B001CECBC /* AppEscolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDD519BE1D9B001CECBC /* AppEscolarTests.swift */; };
 		B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDEB19BE23C9001CECBC /* AppDelegate.swift */; };
 		B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */; };
+		B2631F9819C9DE5800012F5E /* MNCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8919C9DE5800012F5E /* MNCalendarHeaderView.m */; };
+		B2631F9919C9DE5800012F5E /* MNCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8B19C9DE5800012F5E /* MNCalendarView.m */; };
+		B2631F9A19C9DE5800012F5E /* MNCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8D19C9DE5800012F5E /* MNCalendarViewCell.m */; };
+		B2631F9B19C9DE5800012F5E /* MNCalendarViewDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8F19C9DE5800012F5E /* MNCalendarViewDayCell.m */; };
+		B2631F9C19C9DE5800012F5E /* MNCalendarViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F9119C9DE5800012F5E /* MNCalendarViewLayout.m */; };
+		B2631F9D19C9DE5800012F5E /* MNCalendarViewWeekdayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F9319C9DE5800012F5E /* MNCalendarViewWeekdayCell.m */; };
+		B2631F9E19C9DE5800012F5E /* MNFastDateEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F9519C9DE5800012F5E /* MNFastDateEnumeration.m */; };
+		B2631F9F19C9DE5800012F5E /* NSDate+MNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F9719C9DE5800012F5E /* NSDate+MNAdditions.m */; };
 		B26CA53D19C3A48800050693 /* EventoEscolarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */; };
 		B2DB765D19C21E1C00071E2D /* slideInOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */; };
 		B2DCEA9D19C345180028992F /* MenuTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DCEA9C19C345180028992F /* MenuTableHeaderView.swift */; };
@@ -47,6 +55,23 @@
 		B206DDEB19BE23C9001CECBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B206DDFB19BE3054001CECBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarMenuController.swift; sourceTree = "<group>"; };
+		B2631F8819C9DE5800012F5E /* MNCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarHeaderView.h; sourceTree = "<group>"; };
+		B2631F8919C9DE5800012F5E /* MNCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarHeaderView.m; sourceTree = "<group>"; };
+		B2631F8A19C9DE5800012F5E /* MNCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarView.h; sourceTree = "<group>"; };
+		B2631F8B19C9DE5800012F5E /* MNCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarView.m; sourceTree = "<group>"; };
+		B2631F8C19C9DE5800012F5E /* MNCalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarViewCell.h; sourceTree = "<group>"; };
+		B2631F8D19C9DE5800012F5E /* MNCalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarViewCell.m; sourceTree = "<group>"; };
+		B2631F8E19C9DE5800012F5E /* MNCalendarViewDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarViewDayCell.h; sourceTree = "<group>"; };
+		B2631F8F19C9DE5800012F5E /* MNCalendarViewDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarViewDayCell.m; sourceTree = "<group>"; };
+		B2631F9019C9DE5800012F5E /* MNCalendarViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarViewLayout.h; sourceTree = "<group>"; };
+		B2631F9119C9DE5800012F5E /* MNCalendarViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarViewLayout.m; sourceTree = "<group>"; };
+		B2631F9219C9DE5800012F5E /* MNCalendarViewWeekdayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarViewWeekdayCell.h; sourceTree = "<group>"; };
+		B2631F9319C9DE5800012F5E /* MNCalendarViewWeekdayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarViewWeekdayCell.m; sourceTree = "<group>"; };
+		B2631F9419C9DE5800012F5E /* MNFastDateEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNFastDateEnumeration.h; sourceTree = "<group>"; };
+		B2631F9519C9DE5800012F5E /* MNFastDateEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNFastDateEnumeration.m; sourceTree = "<group>"; };
+		B2631F9619C9DE5800012F5E /* NSDate+MNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MNAdditions.h"; sourceTree = "<group>"; };
+		B2631F9719C9DE5800012F5E /* NSDate+MNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MNAdditions.m"; sourceTree = "<group>"; };
+		B2631FA019C9E0F400012F5E /* HeaderMNCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderMNCalendar.h; sourceTree = "<group>"; };
 		B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoEscolarCell.swift; sourceTree = "<group>"; };
 		B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slideInOutAnimationController.swift; sourceTree = "<group>"; };
 		B2DCEA9C19C345180028992F /* MenuTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableHeaderView.swift; sourceTree = "<group>"; };
@@ -230,6 +255,7 @@
 		B206DDE719BE2248001CECBC /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B2631F8719C9DE5800012F5E /* MNCalendarView */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -249,6 +275,30 @@
 				B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */,
 			);
 			name = customNavigator;
+			sourceTree = "<group>";
+		};
+		B2631F8719C9DE5800012F5E /* MNCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				B2631F8819C9DE5800012F5E /* MNCalendarHeaderView.h */,
+				B2631F8919C9DE5800012F5E /* MNCalendarHeaderView.m */,
+				B2631F8A19C9DE5800012F5E /* MNCalendarView.h */,
+				B2631F8B19C9DE5800012F5E /* MNCalendarView.m */,
+				B2631F8C19C9DE5800012F5E /* MNCalendarViewCell.h */,
+				B2631F8D19C9DE5800012F5E /* MNCalendarViewCell.m */,
+				B2631F8E19C9DE5800012F5E /* MNCalendarViewDayCell.h */,
+				B2631F8F19C9DE5800012F5E /* MNCalendarViewDayCell.m */,
+				B2631F9019C9DE5800012F5E /* MNCalendarViewLayout.h */,
+				B2631F9119C9DE5800012F5E /* MNCalendarViewLayout.m */,
+				B2631F9219C9DE5800012F5E /* MNCalendarViewWeekdayCell.h */,
+				B2631F9319C9DE5800012F5E /* MNCalendarViewWeekdayCell.m */,
+				B2631F9419C9DE5800012F5E /* MNFastDateEnumeration.h */,
+				B2631F9519C9DE5800012F5E /* MNFastDateEnumeration.m */,
+				B2631F9619C9DE5800012F5E /* NSDate+MNAdditions.h */,
+				B2631F9719C9DE5800012F5E /* NSDate+MNAdditions.m */,
+				B2631FA019C9E0F400012F5E /* HeaderMNCalendar.h */,
+			);
+			path = MNCalendarView;
 			sourceTree = "<group>";
 		};
 		B26CA53A19C3A3C200050693 /* Calendario Escolar */ = {
@@ -407,18 +457,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2631F9B19C9DE5800012F5E /* MNCalendarViewDayCell.m in Sources */,
 				B2F22D2719C10C1700139AF3 /* MasterNavigationController.swift in Sources */,
 				76ABBFD819C74EAE001F04B2 /* DetalleEventoViewController.swift in Sources */,
+				B2631F9F19C9DE5800012F5E /* NSDate+MNAdditions.m in Sources */,
 				B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */,
 				B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */,
 				B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */,
+				B2631F9D19C9DE5800012F5E /* MNCalendarViewWeekdayCell.m in Sources */,
 				B2F22D2519C10A5900139AF3 /* CalendarioEscolarViewController.swift in Sources */,
 				76ABBFDE19C75E1F001F04B2 /* NotificacionesViewController.swift in Sources */,
 				76ABBFDB19C75A32001F04B2 /* DirectorioEscolarViewController.swift in Sources */,
 				B26CA53D19C3A48800050693 /* EventoEscolarCell.swift in Sources */,
 				B2DCEA9D19C345180028992F /* MenuTableHeaderView.swift in Sources */,
+				B2631F9E19C9DE5800012F5E /* MNFastDateEnumeration.m in Sources */,
+				B2631F9A19C9DE5800012F5E /* MNCalendarViewCell.m in Sources */,
 				B2F22D2319C1079600139AF3 /* EventosEscolaresViewController.swift in Sources */,
+				B2631F9819C9DE5800012F5E /* MNCalendarHeaderView.m in Sources */,
 				B2DB765D19C21E1C00071E2D /* slideInOutAnimationController.swift in Sources */,
+				B2631F9C19C9DE5800012F5E /* MNCalendarViewLayout.m in Sources */,
+				B2631F9919C9DE5800012F5E /* MNCalendarView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +595,7 @@
 				INFOPLIST_FILE = AppEscolar/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AppEscolar/Vendors/MNCalendarView/HeaderMNCalendar.h";
 			};
 			name = Debug;
 		};
@@ -548,6 +607,7 @@
 				INFOPLIST_FILE = AppEscolar/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AppEscolar/Vendors/MNCalendarView/HeaderMNCalendar.h";
 			};
 			name = Release;
 		};

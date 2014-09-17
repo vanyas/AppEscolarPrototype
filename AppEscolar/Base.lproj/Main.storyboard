@@ -212,22 +212,26 @@
                         <viewControllerLayoutGuide type="bottom" id="prA-nZ-uT4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="D27-Ff-pt5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="calendarioEscolar" translatesAutoresizingMaskIntoConstraints="NO" id="Sa7-De-TFq">
-                                <rect key="frame" x="16" y="64" width="568" height="516"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Hk-ZE-CkZ" userLabel="contentView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Sa7-De-TFq" secondAttribute="trailing" constant="16" id="E0p-zH-mr1"/>
-                            <constraint firstItem="Sa7-De-TFq" firstAttribute="top" secondItem="jRK-88-qXd" secondAttribute="bottom" id="YkF-ZM-zPC"/>
-                            <constraint firstItem="prA-nZ-uT4" firstAttribute="top" secondItem="Sa7-De-TFq" secondAttribute="bottom" constant="20" id="a7U-4A-KRf"/>
-                            <constraint firstItem="Sa7-De-TFq" firstAttribute="leading" secondItem="D27-Ff-pt5" secondAttribute="leading" constant="16" id="zlD-Vc-wH7"/>
+                            <constraint firstItem="9Hk-ZE-CkZ" firstAttribute="top" secondItem="jRK-88-qXd" secondAttribute="bottom" id="Gyh-ee-qJ1"/>
+                            <constraint firstItem="9Hk-ZE-CkZ" firstAttribute="leading" secondItem="D27-Ff-pt5" secondAttribute="leading" id="Qi9-9C-1JJ"/>
+                            <constraint firstItem="prA-nZ-uT4" firstAttribute="top" secondItem="9Hk-ZE-CkZ" secondAttribute="bottom" id="YCu-N6-i1z"/>
+                            <constraint firstAttribute="trailing" secondItem="9Hk-ZE-CkZ" secondAttribute="trailing" id="dTF-S8-za7"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="contentView" destination="9Hk-ZE-CkZ" id="kzJ-C6-uKr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CR-Hm-4bK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -666,7 +670,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendarioEscolar" width="613" height="796"/>
         <image name="notif_blue" width="42" height="42"/>
         <image name="notif_red" width="42" height="42"/>
         <image name="notif_yellow" width="42" height="42"/>

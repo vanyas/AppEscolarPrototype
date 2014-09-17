@@ -9,6 +9,15 @@
 import UIKit
 
 class CalendarioEscolarViewController: UIViewController {
+    
+    //MARK: -
+    //MARK: OUtlet's
+    
+    @IBOutlet weak var contentView: UIView!
+    
+    //MARK: -
+    //MARK: properties
+    var calendarView:MNCalendarView!
 
     var masterNavigationController:MasterNavigationController{
         get{
@@ -23,6 +32,18 @@ class CalendarioEscolarViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.navigationItem.leftBarButtonItem = masterNavigationController.showMenuButton
         self.navigationItem.rightBarButtonItem = masterNavigationController.showNotificationsButton
+        
+        
+        //add CalendarView
+        
+        calendarView = MNCalendarView(frame: contentView.bounds)
+        calendarView.calendar = NSCalendar(calendarIdentifier: NSGregorianCalendar)
+        calendarView.selectedDate = NSDate()
+        calendarView.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
+        calendarView.backgroundColor = UIColor.whiteColor()
+        calendarView.separatorColor = UIColor(red: 0.89, green: 0.89, blue: 0.89, alpha: 1)
+        
+        contentView.addSubview(calendarView)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +51,12 @@ class CalendarioEscolarViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        self.calendarView.setNeedsLayout()
+    }
 
     /*
     // MARK: - Navigation
