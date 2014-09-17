@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class MasterNavigationController: UINavigationController {
     
@@ -17,6 +18,8 @@ class MasterNavigationController: UINavigationController {
     }
     
     var showMenuButton : UIBarButtonItem?
+    
+    var showNotificationsButton : UIBarButtonItem?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,14 @@ class MasterNavigationController: UINavigationController {
             style: UIBarButtonItemStyle.Plain,
             target: self,
             action: Selector("showSideBarMenu"))
+        
+        showNotificationsButton = UIBarButtonItem(title: "Avisos",
+            style: UIBarButtonItemStyle.Plain,
+            target: self,
+            action: Selector("showNotifications"))
+        
+        
+        showNotificationsButton?.tintColor = UIColor.redColor()
 
     }
 
@@ -38,6 +49,10 @@ class MasterNavigationController: UINavigationController {
     
     func showSideBarMenu(){
         self.sidebarController.zoomOutPresentedController(animated: true)
+    }
+    
+    func showNotifications(){
+        self.sidebarController.ShowNotificationsController()
     }
 
 }

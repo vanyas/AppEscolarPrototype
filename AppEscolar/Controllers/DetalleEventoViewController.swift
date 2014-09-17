@@ -1,35 +1,25 @@
 //
-//  CalendarioEscolarViewController.swift
+//  DetalleEventoViewController.swift
 //  AppEscolar
 //
-//  Created by VANGELI ONTIVEROS on 10/09/14.
+//  Created by Vangeli Ontiveros Islas on 15/09/14.
 //  Copyright (c) 2014 VANGELI ONTIVEROS. All rights reserved.
 //
 
 import UIKit
 
-class CalendarioEscolarViewController: UIViewController {
+class DetalleEventoViewController: UIViewController {
 
-    var masterNavigationController:MasterNavigationController{
-        get{
-            
-            return self.navigationController as MasterNavigationController
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.navigationItem.leftBarButtonItem = masterNavigationController.showMenuButton
-        self.navigationItem.rightBarButtonItem = masterNavigationController.showNotificationsButton
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

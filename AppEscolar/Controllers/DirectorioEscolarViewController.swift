@@ -1,14 +1,14 @@
 //
-//  CalendarioEscolarViewController.swift
+//  DirectorioEscolarViewController.swift
 //  AppEscolar
 //
-//  Created by VANGELI ONTIVEROS on 10/09/14.
+//  Created by Vangeli Ontiveros Islas on 15/09/14.
 //  Copyright (c) 2014 VANGELI ONTIVEROS. All rights reserved.
 //
 
 import UIKit
 
-class CalendarioEscolarViewController: UIViewController {
+class DirectorioEscolarViewController: UITableViewController {
 
     var masterNavigationController:MasterNavigationController{
         get{
@@ -19,7 +19,7 @@ class CalendarioEscolarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.navigationItem.leftBarButtonItem = masterNavigationController.showMenuButton
         self.navigationItem.rightBarButtonItem = masterNavigationController.showNotificationsButton

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76ABBFD819C74EAE001F04B2 /* DetalleEventoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABBFD719C74EAE001F04B2 /* DetalleEventoViewController.swift */; };
+		76ABBFDB19C75A32001F04B2 /* DirectorioEscolarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABBFDA19C75A32001F04B2 /* DirectorioEscolarViewController.swift */; };
+		76ABBFDE19C75E1F001F04B2 /* NotificacionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABBFDD19C75E1F001F04B2 /* NotificacionesViewController.swift */; };
 		B206DDC819BE1D9B001CECBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B206DDC619BE1D9B001CECBC /* Main.storyboard */; };
 		B206DDCA19BE1D9B001CECBC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B206DDC919BE1D9B001CECBC /* Images.xcassets */; };
 		B206DDD619BE1D9B001CECBC /* AppEscolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDD519BE1D9B001CECBC /* AppEscolarTests.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		76ABBFD719C74EAE001F04B2 /* DetalleEventoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleEventoViewController.swift; sourceTree = "<group>"; };
+		76ABBFDA19C75A32001F04B2 /* DirectorioEscolarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectorioEscolarViewController.swift; sourceTree = "<group>"; };
+		76ABBFDD19C75E1F001F04B2 /* NotificacionesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificacionesViewController.swift; sourceTree = "<group>"; };
 		B206DDBD19BE1D9B001CECBC /* AppEscolar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppEscolar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B206DDC919BE1D9B001CECBC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B206DDCF19BE1D9B001CECBC /* AppEscolarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppEscolarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +74,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		76ABBFD619C74E8D001F04B2 /* Detalle Evento */ = {
+			isa = PBXGroup;
+			children = (
+				76ABBFD719C74EAE001F04B2 /* DetalleEventoViewController.swift */,
+			);
+			name = "Detalle Evento";
+			sourceTree = "<group>";
+		};
+		76ABBFD919C75A0F001F04B2 /* Directorio Escolar */ = {
+			isa = PBXGroup;
+			children = (
+				76ABBFDA19C75A32001F04B2 /* DirectorioEscolarViewController.swift */,
+			);
+			name = "Directorio Escolar";
+			sourceTree = "<group>";
+		};
+		76ABBFDC19C75DF8001F04B2 /* Notificaiones */ = {
+			isa = PBXGroup;
+			children = (
+				76ABBFDD19C75E1F001F04B2 /* NotificacionesViewController.swift */,
+			);
+			name = Notificaiones;
+			sourceTree = "<group>";
+		};
 		B206DDB419BE1D9A001CECBC = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +189,9 @@
 		B206DDE219BE2248001CECBC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				76ABBFDC19C75DF8001F04B2 /* Notificaiones */,
+				76ABBFD919C75A0F001F04B2 /* Directorio Escolar */,
+				76ABBFD619C74E8D001F04B2 /* Detalle Evento */,
 				B26CA53A19C3A3C200050693 /* Calendario Escolar */,
 				B2F22D1F19C0D2BD00139AF3 /* Eventos Escolares */,
 				B206DDF219BE2CDE001CECBC /* customNavigator */,
@@ -375,10 +408,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F22D2719C10C1700139AF3 /* MasterNavigationController.swift in Sources */,
+				76ABBFD819C74EAE001F04B2 /* DetalleEventoViewController.swift in Sources */,
 				B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */,
 				B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */,
 				B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */,
 				B2F22D2519C10A5900139AF3 /* CalendarioEscolarViewController.swift in Sources */,
+				76ABBFDE19C75E1F001F04B2 /* NotificacionesViewController.swift in Sources */,
+				76ABBFDB19C75A32001F04B2 /* DirectorioEscolarViewController.swift in Sources */,
 				B26CA53D19C3A48800050693 /* EventoEscolarCell.swift in Sources */,
 				B2DCEA9D19C345180028992F /* MenuTableHeaderView.swift in Sources */,
 				B2F22D2319C1079600139AF3 /* EventosEscolaresViewController.swift in Sources */,

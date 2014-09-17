@@ -51,6 +51,9 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
     var isZoomingOut:Bool = false
     
     
+    //notificationController
+    var notificationController:NotificacionesViewController!
+    
     //MARK: -
     //MARK: Outlets
     
@@ -64,6 +67,8 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
         self.menuTableView.rowHeight = 64.0
         self.menuTableView.registerClass(MenuTableHeaderView.self, forHeaderFooterViewReuseIdentifier: MenuTableHeaderView.identifierID())
         
+        //notifications
+        self.notificationController = self.storyboard?.instantiateViewControllerWithIdentifier("NotificacionesViewController") as NotificacionesViewController
         
         //add navigationController
         
@@ -74,6 +79,8 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
         self.addChildViewController(masterNavigationController)
         self.view .addSubview(masterNavigationController.view)
         masterNavigationController.didMoveToParentViewController(self)
+        
+        
         
         self.menuTableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0),
             animated: false,
@@ -257,8 +264,16 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
         }//end if
         
     }
-
     
+    //MARK: -
+    //MARK: Notications
+    
+    func ShowNotificationsController(){
+
+        self.masterNavigationController.showViewController(notificationController,
+            sender: masterNavigationController)
+        
+    }
 }
 
 
