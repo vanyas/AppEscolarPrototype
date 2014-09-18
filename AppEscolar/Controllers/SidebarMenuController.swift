@@ -14,7 +14,7 @@ enum OpcionMenu: String{
     case EventosEscolares = "EventosEscolaresViewController"
     case CalendarioEscolar = "CalendarioEscolarViewController"
     case DirectorioEscolar = "DirectorioEscolarViewController"
-    
+    case DetalleHijo = "DetalleHijoViewController"
 }
 
 enum ZoomTransitionType{
@@ -43,7 +43,7 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
         OpcionMenu.CalendarioEscolar,
         OpcionMenu.DirectorioEscolar]
     
-    
+    let misHijos = ["Rosalía Perez Tirado", "Santiago Perez Tirado"]
     
     /// references the actual "child presented controller"
     var masterNavigationController:MasterNavigationController!
@@ -64,7 +64,8 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
     
     override func viewDidLoad() {
         //customize tableview
-        self.menuTableView.rowHeight = 64.0
+        self.menuTableView.estimatedRowHeight = 64.0
+        self.menuTableView.rowHeight = UITableViewAutomaticDimension
         self.menuTableView.registerClass(MenuTableHeaderView.self, forHeaderFooterViewReuseIdentifier: MenuTableHeaderView.identifierID())
         
         //notifications
@@ -72,7 +73,8 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
         
         //add navigationController
         
-        let eventosVC = storyboard?.instantiateViewControllerWithIdentifier(OpcionMenu.EventosEscolares.toRaw()) as EventosEscolaresViewController
+        let eventosVC = storyboard?.instantiateViewControllerWithIdentifier(OpcionMenu.EventosEscolares.toRaw()) as UIViewController
+        
         self.masterNavigationController = MasterNavigationController(rootViewController: eventosVC)
         self.masterNavigationController.view.autoresizingMask = .FlexibleHeight | .FlexibleWidth
         
@@ -93,12 +95,18 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
     
     //MARK: -
     //MARK: UITableViewDataSource
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2;
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var totalRows:Int = 0
         
         switch section{
         case 0:
             totalRows = opcionesEscuela.count
+        case 1:
+            totalRows = misHijos.count
         default:
             totalRows = 0
         }//end switch
@@ -111,9 +119,18 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
         
         var cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as MenuTableCell
         
-        var opcionSeleccionada = opcionesEscuela[indexPath.row]
+        switch indexPath.section{
+        case 0:
+            var opcionSeleccionada = opcionesEscuela[indexPath.row]
+            cell.optionText = self.getAssociatedValueFromOpcionMenu(opcionSeleccionada)
+        case 1:
+            cell.opcionLabel.numberOfLines = 0
+            cell.optionText = misHijos[indexPath.row]
+        default:
+            break
+
+        }
         
-        cell.optionText = self.getAssociatedValueFromOpcionMenu(opcionSeleccionada)
         
         return cell
         
@@ -126,6 +143,15 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
         
         headerView.setTranslatesAutoresizingMaskIntoConstraints(false)
         
+        switch section{
+        case 0:
+            headerView.sectionTitleLabel.text = "Mi Escuela"
+        case 1:
+            headerView.sectionTitleLabel.text = "Mis Hij@s"
+        default:
+            break
+        }
+        
         return headerView
     }
     
@@ -134,7 +160,16 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
     //MARK: UITableViewDelegate
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //get option
-        var opcionSeleccionada = opcionesEscuela[indexPath.row]
+        var opcionSeleccionada = OpcionMenu.None
+        
+        switch indexPath.section{
+        case 0:
+            opcionSeleccionada = opcionesEscuela[indexPath.row]
+        case 1:
+            opcionSeleccionada = OpcionMenu.DetalleHijo
+        default:
+            break
+        }
         
         //present new option
         self.willPresentChildViewControllerFromOption(opcionSeleccionada,animated:true)
@@ -154,6 +189,8 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
             optionValue = "Calendario Escolar"
         case .DirectorioEscolar:
             optionValue = "Directorio Escolar"
+        case .DetalleHijo:
+            optionValue = "Hij@"
         }
         
         return optionValue
@@ -166,6 +203,14 @@ class SidebarMenuController: UIViewController,UITableViewDelegate,UITableViewDat
 
         //create instance of view controller
         var nextPresentedController =  self.storyboard?.instantiateViewControllerWithIdentifier(option.toRaw()) as UIViewController
+        
+        if let detalleHijoVC = nextPresentedController as? DetalleHijoViewController{
+            
+            var idx = self.menuTableView.indexPathForSelectedRow()?.row ?? 0
+            
+            detalleHijoVC.nombreAlumno = misHijos[idx]
+            
+        }
         
         
         if animated == false { //just replace an zoom in

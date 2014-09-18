@@ -15,6 +15,14 @@
 		B206DDD619BE1D9B001CECBC /* AppEscolarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDD519BE1D9B001CECBC /* AppEscolarTests.swift */; };
 		B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDEB19BE23C9001CECBC /* AppDelegate.swift */; };
 		B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */; };
+		B20F8A8719CB8E2900180B34 /* AsistenciasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A8619CB8E2900180B34 /* AsistenciasViewController.swift */; };
+		B20F8A9819CB958900180B34 /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A8A19CB958900180B34 /* NSCalendar+RSDFAdditions.m */; };
+		B20F8A9919CB958900180B34 /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A8D19CB958900180B34 /* RSDFDatePickerCollectionView.m */; };
+		B20F8A9A19CB958900180B34 /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A8F19CB958900180B34 /* RSDFDatePickerCollectionViewLayout.m */; };
+		B20F8A9B19CB958900180B34 /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A9119CB958900180B34 /* RSDFDatePickerDayCell.m */; };
+		B20F8A9C19CB958900180B34 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A9319CB958900180B34 /* RSDFDatePickerDaysOfWeekView.m */; };
+		B20F8A9D19CB958900180B34 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A9519CB958900180B34 /* RSDFDatePickerMonthHeader.m */; };
+		B20F8A9E19CB958900180B34 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A9719CB958900180B34 /* RSDFDatePickerView.m */; };
 		B2631F9819C9DE5800012F5E /* MNCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8919C9DE5800012F5E /* MNCalendarHeaderView.m */; };
 		B2631F9919C9DE5800012F5E /* MNCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8B19C9DE5800012F5E /* MNCalendarView.m */; };
 		B2631F9A19C9DE5800012F5E /* MNCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8D19C9DE5800012F5E /* MNCalendarViewCell.m */; };
@@ -23,7 +31,11 @@
 		B2631F9D19C9DE5800012F5E /* MNCalendarViewWeekdayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F9319C9DE5800012F5E /* MNCalendarViewWeekdayCell.m */; };
 		B2631F9E19C9DE5800012F5E /* MNFastDateEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F9519C9DE5800012F5E /* MNFastDateEnumeration.m */; };
 		B2631F9F19C9DE5800012F5E /* NSDate+MNAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F9719C9DE5800012F5E /* NSDate+MNAdditions.m */; };
+		B2631FA319C9F20F00012F5E /* DetalleHijoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2631FA219C9F20F00012F5E /* DetalleHijoViewController.swift */; };
+		B2631FA619CA00E500012F5E /* ZFRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2631FA519CA00E500012F5E /* ZFRippleButton.swift */; };
 		B26CA53D19C3A48800050693 /* EventoEscolarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */; };
+		B2BEFFCD19CB4139003815A6 /* ReportesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BEFFCC19CB4139003815A6 /* ReportesViewController.swift */; };
+		B2BEFFD419CB4C7E003815A6 /* HorarioClasesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BEFFD319CB4C7E003815A6 /* HorarioClasesViewController.swift */; };
 		B2DB765D19C21E1C00071E2D /* slideInOutAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */; };
 		B2DCEA9D19C345180028992F /* MenuTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DCEA9C19C345180028992F /* MenuTableHeaderView.swift */; };
 		B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F22D1D19C0AE9700139AF3 /* MenuTableCell.swift */; };
@@ -55,6 +67,22 @@
 		B206DDEB19BE23C9001CECBC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B206DDFB19BE3054001CECBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarMenuController.swift; sourceTree = "<group>"; };
+		B20F8A8619CB8E2900180B34 /* AsistenciasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsistenciasViewController.swift; sourceTree = "<group>"; };
+		B20F8A8919CB958900180B34 /* NSCalendar+RSDFAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+RSDFAdditions.h"; sourceTree = "<group>"; };
+		B20F8A8A19CB958900180B34 /* NSCalendar+RSDFAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+RSDFAdditions.m"; sourceTree = "<group>"; };
+		B20F8A8B19CB958900180B34 /* RSDayFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDayFlow.h; sourceTree = "<group>"; };
+		B20F8A8C19CB958900180B34 /* RSDFDatePickerCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerCollectionView.h; sourceTree = "<group>"; };
+		B20F8A8D19CB958900180B34 /* RSDFDatePickerCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerCollectionView.m; sourceTree = "<group>"; };
+		B20F8A8E19CB958900180B34 /* RSDFDatePickerCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerCollectionViewLayout.h; sourceTree = "<group>"; };
+		B20F8A8F19CB958900180B34 /* RSDFDatePickerCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerCollectionViewLayout.m; sourceTree = "<group>"; };
+		B20F8A9019CB958900180B34 /* RSDFDatePickerDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerDayCell.h; sourceTree = "<group>"; };
+		B20F8A9119CB958900180B34 /* RSDFDatePickerDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerDayCell.m; sourceTree = "<group>"; };
+		B20F8A9219CB958900180B34 /* RSDFDatePickerDaysOfWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerDaysOfWeekView.h; sourceTree = "<group>"; };
+		B20F8A9319CB958900180B34 /* RSDFDatePickerDaysOfWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerDaysOfWeekView.m; sourceTree = "<group>"; };
+		B20F8A9419CB958900180B34 /* RSDFDatePickerMonthHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerMonthHeader.h; sourceTree = "<group>"; };
+		B20F8A9519CB958900180B34 /* RSDFDatePickerMonthHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerMonthHeader.m; sourceTree = "<group>"; };
+		B20F8A9619CB958900180B34 /* RSDFDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerView.h; sourceTree = "<group>"; };
+		B20F8A9719CB958900180B34 /* RSDFDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerView.m; sourceTree = "<group>"; };
 		B2631F8819C9DE5800012F5E /* MNCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarHeaderView.h; sourceTree = "<group>"; };
 		B2631F8919C9DE5800012F5E /* MNCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarHeaderView.m; sourceTree = "<group>"; };
 		B2631F8A19C9DE5800012F5E /* MNCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarView.h; sourceTree = "<group>"; };
@@ -72,7 +100,11 @@
 		B2631F9619C9DE5800012F5E /* NSDate+MNAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MNAdditions.h"; sourceTree = "<group>"; };
 		B2631F9719C9DE5800012F5E /* NSDate+MNAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MNAdditions.m"; sourceTree = "<group>"; };
 		B2631FA019C9E0F400012F5E /* HeaderMNCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderMNCalendar.h; sourceTree = "<group>"; };
+		B2631FA219C9F20F00012F5E /* DetalleHijoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleHijoViewController.swift; sourceTree = "<group>"; };
+		B2631FA519CA00E500012F5E /* ZFRippleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFRippleButton.swift; sourceTree = "<group>"; };
 		B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventoEscolarCell.swift; sourceTree = "<group>"; };
+		B2BEFFCC19CB4139003815A6 /* ReportesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportesViewController.swift; sourceTree = "<group>"; };
+		B2BEFFD319CB4C7E003815A6 /* HorarioClasesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioClasesViewController.swift; sourceTree = "<group>"; };
 		B2DB765C19C21E1C00071E2D /* slideInOutAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slideInOutAnimationController.swift; sourceTree = "<group>"; };
 		B2DCEA9C19C345180028992F /* MenuTableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableHeaderView.swift; sourceTree = "<group>"; };
 		B2F22D1D19C0AE9700139AF3 /* MenuTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableCell.swift; sourceTree = "<group>"; };
@@ -214,6 +246,10 @@
 		B206DDE219BE2248001CECBC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B20F8A8519CB8E1100180B34 /* Asistencias */,
+				B2BEFFD219CB4C66003815A6 /* Horario Clases */,
+				B2BEFFCB19CB411A003815A6 /* ReportesViewController */,
+				B2631FA119C9F1D600012F5E /* Detalle Hijo */,
 				76ABBFDC19C75DF8001F04B2 /* Notificaiones */,
 				76ABBFD919C75A0F001F04B2 /* Directorio Escolar */,
 				76ABBFD619C74E8D001F04B2 /* Detalle Evento */,
@@ -255,6 +291,8 @@
 		B206DDE719BE2248001CECBC /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				B20F8A8819CB958900180B34 /* RSDayFlow */,
+				B2631FA419CA00E500012F5E /* ZFRippleButton */,
 				B2631F8719C9DE5800012F5E /* MNCalendarView */,
 			);
 			path = Vendors;
@@ -275,6 +313,36 @@
 				B206DDFD19BE3296001CECBC /* SidebarMenuController.swift */,
 			);
 			name = customNavigator;
+			sourceTree = "<group>";
+		};
+		B20F8A8519CB8E1100180B34 /* Asistencias */ = {
+			isa = PBXGroup;
+			children = (
+				B20F8A8619CB8E2900180B34 /* AsistenciasViewController.swift */,
+			);
+			name = Asistencias;
+			sourceTree = "<group>";
+		};
+		B20F8A8819CB958900180B34 /* RSDayFlow */ = {
+			isa = PBXGroup;
+			children = (
+				B20F8A8919CB958900180B34 /* NSCalendar+RSDFAdditions.h */,
+				B20F8A8A19CB958900180B34 /* NSCalendar+RSDFAdditions.m */,
+				B20F8A8B19CB958900180B34 /* RSDayFlow.h */,
+				B20F8A8C19CB958900180B34 /* RSDFDatePickerCollectionView.h */,
+				B20F8A8D19CB958900180B34 /* RSDFDatePickerCollectionView.m */,
+				B20F8A8E19CB958900180B34 /* RSDFDatePickerCollectionViewLayout.h */,
+				B20F8A8F19CB958900180B34 /* RSDFDatePickerCollectionViewLayout.m */,
+				B20F8A9019CB958900180B34 /* RSDFDatePickerDayCell.h */,
+				B20F8A9119CB958900180B34 /* RSDFDatePickerDayCell.m */,
+				B20F8A9219CB958900180B34 /* RSDFDatePickerDaysOfWeekView.h */,
+				B20F8A9319CB958900180B34 /* RSDFDatePickerDaysOfWeekView.m */,
+				B20F8A9419CB958900180B34 /* RSDFDatePickerMonthHeader.h */,
+				B20F8A9519CB958900180B34 /* RSDFDatePickerMonthHeader.m */,
+				B20F8A9619CB958900180B34 /* RSDFDatePickerView.h */,
+				B20F8A9719CB958900180B34 /* RSDFDatePickerView.m */,
+			);
+			path = RSDayFlow;
 			sourceTree = "<group>";
 		};
 		B2631F8719C9DE5800012F5E /* MNCalendarView */ = {
@@ -301,6 +369,22 @@
 			path = MNCalendarView;
 			sourceTree = "<group>";
 		};
+		B2631FA119C9F1D600012F5E /* Detalle Hijo */ = {
+			isa = PBXGroup;
+			children = (
+				B2631FA219C9F20F00012F5E /* DetalleHijoViewController.swift */,
+			);
+			name = "Detalle Hijo";
+			sourceTree = "<group>";
+		};
+		B2631FA419CA00E500012F5E /* ZFRippleButton */ = {
+			isa = PBXGroup;
+			children = (
+				B2631FA519CA00E500012F5E /* ZFRippleButton.swift */,
+			);
+			path = ZFRippleButton;
+			sourceTree = "<group>";
+		};
 		B26CA53A19C3A3C200050693 /* Calendario Escolar */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +399,22 @@
 				B26CA53C19C3A48800050693 /* EventoEscolarCell.swift */,
 			);
 			name = "Eventos Escolares";
+			sourceTree = "<group>";
+		};
+		B2BEFFCB19CB411A003815A6 /* ReportesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B2BEFFCC19CB4139003815A6 /* ReportesViewController.swift */,
+			);
+			name = ReportesViewController;
+			sourceTree = "<group>";
+		};
+		B2BEFFD219CB4C66003815A6 /* Horario Clases */ = {
+			isa = PBXGroup;
+			children = (
+				B2BEFFD319CB4C7E003815A6 /* HorarioClasesViewController.swift */,
+			);
+			name = "Horario Clases";
 			sourceTree = "<group>";
 		};
 		B2DB765B19C21DF100071E2D /* slideOutAnimation */ = {
@@ -458,19 +558,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2631F9B19C9DE5800012F5E /* MNCalendarViewDayCell.m in Sources */,
+				B20F8A8719CB8E2900180B34 /* AsistenciasViewController.swift in Sources */,
+				B2BEFFCD19CB4139003815A6 /* ReportesViewController.swift in Sources */,
 				B2F22D2719C10C1700139AF3 /* MasterNavigationController.swift in Sources */,
 				76ABBFD819C74EAE001F04B2 /* DetalleEventoViewController.swift in Sources */,
 				B2631F9F19C9DE5800012F5E /* NSDate+MNAdditions.m in Sources */,
+				B20F8A9B19CB958900180B34 /* RSDFDatePickerDayCell.m in Sources */,
+				B2BEFFD419CB4C7E003815A6 /* HorarioClasesViewController.swift in Sources */,
+				B20F8A9919CB958900180B34 /* RSDFDatePickerCollectionView.m in Sources */,
 				B206DDFE19BE3296001CECBC /* SidebarMenuController.swift in Sources */,
+				B20F8A9D19CB958900180B34 /* RSDFDatePickerMonthHeader.m in Sources */,
 				B2F22D1E19C0AE9700139AF3 /* MenuTableCell.swift in Sources */,
 				B206DDEC19BE23C9001CECBC /* AppDelegate.swift in Sources */,
+				B2631FA619CA00E500012F5E /* ZFRippleButton.swift in Sources */,
+				B20F8A9819CB958900180B34 /* NSCalendar+RSDFAdditions.m in Sources */,
 				B2631F9D19C9DE5800012F5E /* MNCalendarViewWeekdayCell.m in Sources */,
 				B2F22D2519C10A5900139AF3 /* CalendarioEscolarViewController.swift in Sources */,
+				B2631FA319C9F20F00012F5E /* DetalleHijoViewController.swift in Sources */,
 				76ABBFDE19C75E1F001F04B2 /* NotificacionesViewController.swift in Sources */,
 				76ABBFDB19C75A32001F04B2 /* DirectorioEscolarViewController.swift in Sources */,
 				B26CA53D19C3A48800050693 /* EventoEscolarCell.swift in Sources */,
+				B20F8A9E19CB958900180B34 /* RSDFDatePickerView.m in Sources */,
+				B20F8A9A19CB958900180B34 /* RSDFDatePickerCollectionViewLayout.m in Sources */,
 				B2DCEA9D19C345180028992F /* MenuTableHeaderView.swift in Sources */,
 				B2631F9E19C9DE5800012F5E /* MNFastDateEnumeration.m in Sources */,
+				B20F8A9C19CB958900180B34 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
 				B2631F9A19C9DE5800012F5E /* MNCalendarViewCell.m in Sources */,
 				B2F22D2319C1079600139AF3 /* EventosEscolaresViewController.swift in Sources */,
 				B2631F9819C9DE5800012F5E /* MNCalendarHeaderView.m in Sources */,

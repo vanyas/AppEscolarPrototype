@@ -1,28 +1,41 @@
 //
-//  DetalleEventoViewController.swift
+//  DetalleHijoViewController.swift
 //  AppEscolar
 //
-//  Created by Vangeli Ontiveros Islas on 15/09/14.
+//  Created by VANGELI ONTIVEROS on 17/09/14.
 //  Copyright (c) 2014 VANGELI ONTIVEROS. All rights reserved.
 //
 
 import UIKit
 
-class DetalleEventoViewController: UIViewController {
-    
-    
+class DetalleHijoViewController: UIViewController {
 
-
+    @IBOutlet weak var nombreAlumnoLabel: UILabel!
+    
+    var masterNavigationController:MasterNavigationController{
+        get{
+            
+            return self.navigationController as MasterNavigationController
+        }
+    }
+    
+    var nombreAlumno:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.navigationItem.leftBarButtonItem = masterNavigationController.showMenuButton
+        self.navigationItem.rightBarButtonItem = masterNavigationController.showNotificationsButton
+        
+        self.nombreAlumnoLabel.text = nombreAlumno
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation

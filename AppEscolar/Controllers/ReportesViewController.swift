@@ -1,17 +1,14 @@
 //
-//  DetalleEventoViewController.swift
+//  ReportesViewController.swift
 //  AppEscolar
 //
-//  Created by Vangeli Ontiveros Islas on 15/09/14.
+//  Created by VANGELI ONTIVEROS on 18/09/14.
 //  Copyright (c) 2014 VANGELI ONTIVEROS. All rights reserved.
 //
 
 import UIKit
 
-class DetalleEventoViewController: UIViewController {
-    
-    
-
+class ReportesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +20,7 @@ class DetalleEventoViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation
