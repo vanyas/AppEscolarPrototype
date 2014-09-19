@@ -23,6 +23,9 @@
 		B20F8A9C19CB958900180B34 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A9319CB958900180B34 /* RSDFDatePickerDaysOfWeekView.m */; };
 		B20F8A9D19CB958900180B34 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A9519CB958900180B34 /* RSDFDatePickerMonthHeader.m */; };
 		B20F8A9E19CB958900180B34 /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B20F8A9719CB958900180B34 /* RSDFDatePickerView.m */; };
+		B23F637319CC781A00F2AB21 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23F637219CC781A00F2AB21 /* LaunchScreen.xib */; };
+		B23F637719CC801C00F2AB21 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = B23F637519CC801C00F2AB21 /* iTunesArtwork@2x */; };
+		B23F637819CC801C00F2AB21 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = B23F637619CC801C00F2AB21 /* iTunesArtwork */; };
 		B2631F9819C9DE5800012F5E /* MNCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8919C9DE5800012F5E /* MNCalendarHeaderView.m */; };
 		B2631F9919C9DE5800012F5E /* MNCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8B19C9DE5800012F5E /* MNCalendarView.m */; };
 		B2631F9A19C9DE5800012F5E /* MNCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2631F8D19C9DE5800012F5E /* MNCalendarViewCell.m */; };
@@ -83,6 +86,9 @@
 		B20F8A9519CB958900180B34 /* RSDFDatePickerMonthHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerMonthHeader.m; sourceTree = "<group>"; };
 		B20F8A9619CB958900180B34 /* RSDFDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDFDatePickerView.h; sourceTree = "<group>"; };
 		B20F8A9719CB958900180B34 /* RSDFDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDFDatePickerView.m; sourceTree = "<group>"; };
+		B23F637219CC781A00F2AB21 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		B23F637519CC801C00F2AB21 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		B23F637619CC801C00F2AB21 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		B2631F8819C9DE5800012F5E /* MNCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarHeaderView.h; sourceTree = "<group>"; };
 		B2631F8919C9DE5800012F5E /* MNCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNCalendarHeaderView.m; sourceTree = "<group>"; };
 		B2631F8A19C9DE5800012F5E /* MNCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNCalendarView.h; sourceTree = "<group>"; };
@@ -176,6 +182,7 @@
 		B206DDBF19BE1D9B001CECBC /* AppEscolar */ = {
 			isa = PBXGroup;
 			children = (
+				B23F637419CC800F00F2AB21 /* ItunesArtWork */,
 				B206DDDF19BE2248001CECBC /* Application */,
 				B206DDE019BE2248001CECBC /* Categories */,
 				B206DDE119BE2248001CECBC /* Components */,
@@ -301,6 +308,7 @@
 		B206DDE819BE2248001CECBC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B23F637219CC781A00F2AB21 /* LaunchScreen.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +351,15 @@
 				B20F8A9719CB958900180B34 /* RSDFDatePickerView.m */,
 			);
 			path = RSDayFlow;
+			sourceTree = "<group>";
+		};
+		B23F637419CC800F00F2AB21 /* ItunesArtWork */ = {
+			isa = PBXGroup;
+			children = (
+				B23F637519CC801C00F2AB21 /* iTunesArtwork@2x */,
+				B23F637619CC801C00F2AB21 /* iTunesArtwork */,
+			);
+			name = ItunesArtWork;
 			sourceTree = "<group>";
 		};
 		B2631F8719C9DE5800012F5E /* MNCalendarView */ = {
@@ -507,6 +524,7 @@
 				TargetAttributes = {
 					B206DDBC19BE1D9B001CECBC = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = E9L95J864A;
 					};
 					B206DDCE19BE1D9B001CECBC = {
 						CreatedOnToolsVersion = 6.0;
@@ -539,7 +557,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B206DDC819BE1D9B001CECBC /* Main.storyboard in Resources */,
+				B23F637319CC781A00F2AB21 /* LaunchScreen.xib in Resources */,
 				B206DDCA19BE1D9B001CECBC /* Images.xcassets in Resources */,
+				B23F637819CC801C00F2AB21 /* iTunesArtwork in Resources */,
+				B23F637719CC801C00F2AB21 /* iTunesArtwork@2x in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +725,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AppEscolar/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AppEscolar/Vendors/MNCalendarView/HeaderMNCalendar.h";
@@ -716,7 +739,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AppEscolar/Application/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AppEscolar/Vendors/MNCalendarView/HeaderMNCalendar.h";
